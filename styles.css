@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: rgb(14, 15, 15);
+}
+
+/*Header del sitio*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  margin: 0 8rem;
+}
+
+.header__part {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+header>div>img {
+  height: 7rem;
+  width: auto;
+}
+
+/*Contenido principal del sitio*/
+
+.lista-planetas {
+  background-image: url(img/galaxia.jpg);
+}
+
+#planetas1, #planetas2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.planeta {
+  height: 28rem;
+  width: 20rem;
+  font-size: 1.2rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.2rem;
+  font-family: 'Lato', sans-serif;
+}
+
+img {
+  width: 15rem;
+  height: 15rem;
+}
+
+.titulo {
+  font-size: 2rem;
+  width: 15rem;
+  border-radius: 0.8rem;
+  position: relative;
+  top: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.titulo > h2 {
+  display: flex;
+  justify-content: center;
+}
+
+/*Colores de los planetas*/
+
+#mercurio {
+  background-color: rgb(52, 61, 64);
+  color: #ffffff;
+}
+
+#mercurio-t {
+  background-color: rgb(108, 118, 121);
+}
+
+#venus {
+  background-color: rgb(172, 93, 0);
+}
+
+#venus-t {
+  background-color: rgb(201, 157, 106);
+}
+
+#tierra {
+  background-color: rgb(33, 102, 200);
+}
+
+#tierra-t {
+  background-color: rgb(131, 157, 195);
+}
+
+#marte {
+  background-color: rgb(144, 0, 0);
+  color: #ffffff;
+}
+
+#marte-t {
+  background-color: rgb(164, 96, 96);
+}
+
+#jupiter {
+  background-color: rgb(159, 117, 60);
+}
+
+#jupiter-t {
+  background-color: rgb(203, 174, 136);
+}
+
+#saturno {
+  background-color: rgb(189, 118, 123);
+}
+
+#saturno-t {
+  background-color: rgb(190, 145, 148);
+}
+
+#urano {
+  background-color: rgb(186, 234, 237);
+}
+
+#urano-t {
+  background-color: rgb(207, 219, 219);
+}
+
+#neptuno {
+  background-color: rgb(101, 155, 255);
+}
+
+#neptuno-t {
+  background-color: rgb(178, 195, 227);
+}
+
+/*footer*/
+footer {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: 'Kumbh Sans', sans-serif;
+  padding-top: 1rem;
+}
+a {
+  text-decoration: none;
+  color: rgb(147, 146, 156);
+}
