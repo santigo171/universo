@@ -10,12 +10,13 @@ html {
 }
 
 /*Header del sitio*/
-
 header {
   display: flex;
   justify-content: space-between;
   color: rgb(255, 255, 255);
-  margin: 0 8rem;
+  margin: 0 2rem;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
 }
 
 .header__part {
@@ -25,21 +26,27 @@ header {
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+#header__part__2 {
+  flex-direction: row-reverse;
+}
+
+#header__part__2 > h1 {
+  margin-left: 1.4rem;
+}
+
 header>div>img {
   height: 7rem;
   width: auto;
 }
 
 /*Contenido principal del sitio*/
-
 .lista-planetas {
   background-image: url(img/galaxia.jpg);
-}
-
-#planetas1, #planetas2 {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1rem;
 }
 
 .contenedor {
@@ -75,13 +82,12 @@ img {
   font-family: 'Raleway', sans-serif;
 }
 
-.titulo > h2 {
+.titulo>h2 {
   display: flex;
   justify-content: center;
 }
 
 /*Colores de los planetas*/
-
 #mercurio {
   background-color: rgb(52, 61, 64);
   color: #ffffff;
@@ -157,9 +163,40 @@ footer {
   justify-content: center;
   font-size: 1.5rem;
   font-family: 'Kumbh Sans', sans-serif;
-  padding-top: 1rem;
+  padding: 1rem 0;
 }
+
 a {
   text-decoration: none;
   color: rgb(147, 146, 156);
+}
+
+@media (min-width: 419px) {
+  #header__part__2 {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 900px) {
+  header {
+    margin: 0 8rem;
+    font-size: 1.1rem;
+  }
+
+  .planeta {
+    margin: 0 3rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .lista-planetas {
+    justify-content: space-evenly;
+    padding: 0 8rem;
+  }
+
+  .planeta {
+    margin: 0 5rem;
+    font-size: 1.2rem;
+  }
 }
